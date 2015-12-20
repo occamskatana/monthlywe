@@ -11,7 +11,8 @@
   </div>
 
   <div class="row">
-     <p><%= post.body %></p>
+     <p><%= post.body %></p><br>
+     <p>-<%= (User.find(params[:id]).email) %></p>
   </div>
   <div class="row">
         
