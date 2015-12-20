@@ -8,15 +8,18 @@
 </head>
 <body>
 
-<div class="container">
 
-		<ul class="nav nav-tabs">
-  <li role="presentation" class="active"><a href="#">Home</a></li>
-  <li role="presentation"><a href="#">About</a></li>
-  <li role="presentation"><a href="#">Posts</a></li>
-</ul>
+	<ul class="nav nav-tabs">
+	  <li><%= link_to "Home", root_path%></li>
+	  <li role="presentation"><a href="#">About</a></li>
+	  <li role="presentation"><%= link_to "Posts", posts_path %></li>
 	
-</div>
+
+		<ul class="pull-right user-info">
+			Sign Up
+			Sign in 
+		</ul>
+	</ul>
 
 <%= yield %>
 
